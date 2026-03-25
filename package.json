@@ -1,6 +1,6 @@
 {
-  "name": "miningos-wrk-sensor-temp-seneca",
-  "version": "0.0.1",
+  "name": "@tetherto/miningos-wrk-sensor-temp-seneca",
+  "version": "1.0.0",
   "description": "MiningOS Worker Sensor Temperature SENECA",
   "keywords": [
     "tether"
@@ -11,9 +11,23 @@
     "type": "git",
     "url": "git+https://github.com/tetherto/miningos-wrk-sensor-temp-seneca.git"
   },
-  "engine": {
-    "node": ">=20.0"
+  "homepage": "https://github.com/tetherto/miningos-wrk-sensor-temp-seneca#readme",
+  "bugs": {
+    "url": "https://github.com/tetherto/miningos-wrk-sensor-temp-seneca/issues"
+  },  
+  "engines": {
+    "node": ">=20"
   },
+  "files": [
+    "worker.js",
+    "workers/",
+    "mock/"
+  ],
+  "main": "worker.js",  
+  "type": "commonjs",
+  "bin": {
+    "miningos-wrk-sensor-temp-seneca": "worker.js"
+  },     
   "scripts": {
     "lint": "standard",
     "lint:fix": "standard --fix",

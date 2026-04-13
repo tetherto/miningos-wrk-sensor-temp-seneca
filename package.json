@@ -1,6 +1,6 @@
 {
   "name": "@tetherto/miningos-wrk-sensor-temp-seneca",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "MiningOS Worker Sensor Temperature SENECA",
   "keywords": [
     "tether"

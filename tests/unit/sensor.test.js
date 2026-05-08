@@ -2,7 +2,7 @@
 
 const { test } = require('brittle')
 const SenecaSensor = require('../../workers/lib/sensor')
-const { FUNCTION_CODES, PROTOCOL } = require('svc-facs-modbus/lib/constants')
+const { FUNCTION_CODES, PROTOCOL } = require('@tetherto/svc-facs-modbus/lib/constants')
 
 test('SenecaSensor constructor throws error when getClient is not provided', async (t) => {
   t.exception(() => {

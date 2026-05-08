@@ -43,9 +43,9 @@ class MockWrkRack {
 }
 
 // Clear cache and replace the base class with our mock before requiring worker-base
-delete require.cache[require.resolve('miningos-tpl-wrk-sensor/workers/rack.sensor.wrk')]
+delete require.cache[require.resolve('@tetherto/miningos-tpl-wrk-sensor/workers/rack.sensor.wrk')]
 delete require.cache[require.resolve('../../workers/lib/worker-base')]
-require.cache[require.resolve('miningos-tpl-wrk-sensor/workers/rack.sensor.wrk')] = {
+require.cache[require.resolve('@tetherto/miningos-tpl-wrk-sensor/workers/rack.sensor.wrk')] = {
   exports: MockWrkRack
 }
 
@@ -56,7 +56,7 @@ test('WrkSensorRack init calls super.init and sets initFacs', async (t) => {
   if (typeof worker.init === 'function') {
     worker.init()
     t.ok(worker.initFacs.length === 1, 'initFacs was set')
-    t.ok(worker.initFacs[0][1] === 'svc-facs-modbus', 'modbus facility is configured')
+    t.ok(worker.initFacs[0][1] === '@tetherto/svc-facs-modbus', 'modbus facility is configured')
   } else {
     t.skip('init method not available in test environment')
   }

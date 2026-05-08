@@ -1,7 +1,7 @@
 'use strict'
 
 const { test } = require('brittle')
-const libUtils = require('miningos-tpl-wrk-thing/workers/lib/utils')
+const libUtils = require('@tetherto/miningos-tpl-wrk-thing/workers/lib/utils')
 
 libUtils.isValidSnap = (snap) => {
   return snap?.stats?.temp_c != null

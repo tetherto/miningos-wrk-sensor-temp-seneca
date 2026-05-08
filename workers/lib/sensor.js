@@ -1,7 +1,7 @@
 'use strict'
 
-const BaseSensor = require('miningos-tpl-wrk-sensor/workers/lib/base')
-const { FUNCTION_CODES, PROTOCOL } = require('svc-facs-modbus/lib/constants')
+const BaseSensor = require('@tetherto/miningos-tpl-wrk-sensor/workers/lib/base')
+const { FUNCTION_CODES, PROTOCOL } = require('@tetherto/svc-facs-modbus/lib/constants')
 const { promiseTimeout } = require('@bitfinex/lib-js-util-promise')
 
 class SenecaSensor extends BaseSensor {

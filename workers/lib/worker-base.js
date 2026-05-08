@@ -1,6 +1,6 @@
 'use strict'
 
-const WrkRack = require('miningos-tpl-wrk-sensor/workers/rack.sensor.wrk')
+const WrkRack = require('@tetherto/miningos-tpl-wrk-sensor/workers/rack.sensor.wrk')
 const SenecaSensor = require('./sensor')
 
 class WrkSensorRack extends WrkRack {
@@ -8,7 +8,7 @@ class WrkSensorRack extends WrkRack {
     super.init()
 
     this.setInitFacs([
-      ['fac', 'svc-facs-modbus', '0', '0', {}, 0]
+      ['fac', '@tetherto/svc-facs-modbus', '0', '0', {}, 0]
     ])
   }
 

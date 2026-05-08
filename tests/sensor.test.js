@@ -1,8 +1,8 @@
 'use strict'
 
-const { testExecutor, getDefaultConf } = require('miningos-tpl-wrk-sensor/tests/sensor.test')
+const { testExecutor, getDefaultConf } = require('@tetherto/miningos-tpl-wrk-sensor/tests/sensor.test')
 const TempSensor = require('../workers/lib/sensor')
-const ModbusFacility = require('svc-facs-modbus')
+const ModbusFacility = require('@tetherto/svc-facs-modbus')
 
 let mock
 

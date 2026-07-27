@@ -14,20 +14,20 @@
   "homepage": "https://github.com/tetherto/miningos-wrk-sensor-temp-seneca#readme",
   "bugs": {
     "url": "https://github.com/tetherto/miningos-wrk-sensor-temp-seneca/issues"
-  },  
+  },
   "engines": {
-    "node": ">=20"
+    "node": ">=24"
   },
   "files": [
     "worker.js",
     "workers/",
     "mock/"
   ],
-  "main": "worker.js",  
+  "main": "worker.js",
   "type": "commonjs",
   "bin": {
     "miningos-wrk-sensor-temp-seneca": "worker.js"
-  },     
+  },
   "scripts": {
     "lint": "standard",
     "lint:fix": "standard --fix",
@@ -41,16 +41,16 @@
   "dependencies": {
     "@bitfinex/bfx-svc-boot-js": "1.2.0",
     "@bitfinex/lib-js-util-promise": "git+https://github.com/bitfinexcom/lib-js-util-promise.git",
-    "async": "3.2.6",
     "@tetherto/miningos-tpl-wrk-sensor": "git+https://github.com/tetherto/miningos-tpl-wrk-sensor.git",
-    "@tetherto/svc-facs-modbus": "git+https://github.com/tetherto/svc-facs-modbus.git"
+    "@tetherto/svc-facs-modbus": "git+https://github.com/tetherto/svc-facs-modbus.git",
+    "async": "3.2.6"
   },
   "devDependencies": {
     "@bitfinex/lib-js-util-base": "git+https://github.com/bitfinexcom/lib-js-util-base.git",
+    "@tetherto/miningos-mock-control-service": "git+https://github.com/tetherto/miningos-mock-control-service.git",
     "brittle": "3.16.3",
     "debug": "4.4.1",
     "modbus-stream": "0.46.0",
-    "@tetherto/miningos-mock-control-service": "git+https://github.com/tetherto/miningos-mock-control-service.git",
     "standard": "17.1.2",
     "uuid": "9.0.1",
     "yargs": "17.7.2"
